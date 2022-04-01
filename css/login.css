@@ -1,0 +1,181 @@
+/* font-family: 'Monoton', cursive;
+font-family: 'Noto Sans KR', sans-serif; 
+ligth(300), regular(400). medium(500), bold(700)*/
+:root{
+    --mainColor:#b60b00;
+    --subColor:#6b6b70;
+    --textColor:#3333;
+    --textSub:#ebecee;
+}
+
+html, body{
+    width: 100%;
+}
+body{
+    background-color: var(--textSub);
+    font-weight: 400;
+}
+
+/***************************** loginBox *****************************/
+.logBox{
+    background-color: blueviolet;
+    position: relative;
+    top: 70px;
+    /* height: 650px; */
+    padding:20px 0;
+    text-align: center;
+}
+.login{
+    position: relative;
+    background-color: var(--textSub);
+    max-width: 550px;
+    /* height: 600px; */
+    margin: 0 auto;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    border-radius: 10px;
+    padding: 20px;
+}
+.logInnerBox {
+    /* _border: 1px solid blue;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); */
+}
+h1{
+    margin: 20px 0;
+    color: var(--mainColor);
+}
+/* Email+Password */
+.input-box{
+    position: relative;
+    margin: 10px 0;
+}
+.input-box > input {
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    padding: 40px 0px 5px 0px;
+    font-size: 14px;
+    width: 100%;
+}
+input::placeholder {
+    color: #3333;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+input:placeholder-shown + label {
+    color: var(--mainColor);
+    opacity: .9;
+    font-size: 14pt;
+    top: 15px;
+}
+input:focus +label, label {
+    color: #aaa;
+    font-size: 10pt;
+    pointer-events: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all .2s ease;
+}
+input:focus, input:not(:placeholder-shown){
+    border-bottom: solid 1px var(--subColor);
+    outline: none;
+}
+/* Save Email */
+.checkbox {
+    position: relative;
+    width: 100%;
+    _background-color: pink;
+}
+.checkbox>input {
+    float: left;
+    margin: 10px 0;
+}
+.checkbox>label{
+    position: absolute;
+    margin: 10px 23px;
+}
+input[id=remeber] + label {
+    /* display: inline-block; */
+    /* width: 40px;
+    height: 40px;
+    border: 2px solid #3333; */
+    cursor: pointer;
+}
+input[id=remeber]:checked + label {
+    background-color: var(--mainColor);
+}
+/* SIGN IN Button */
+.submit {
+    margin: 20px 0px;
+}
+.submit>input {
+    width: 90%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--mainColor);
+    color: var(--textSub);
+    font-size: 18px;
+}
+/* search */
+.search {
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+}
+.search>li {
+    width: 50%;
+}
+.search>li>a {
+    font-size: 14px;
+    color: var(--subColor);
+}
+.search>li>a:hover {
+    color: var(--mainColor);
+}
+.line{
+    border: 1px solid var(--textColor);
+    margin: 10px 0px;
+}
+/* Log in with the following accoun */
+.logInnerBox>p {
+    margin: 30px 0px 20px 0px;
+    font-size: 15px;
+    color: var(--subColor);
+}
+/* sns */
+.sns{
+    display: flex;
+    width: 300px;
+    margin: 0px auto;
+}
+.sns>li{
+    width: calc(100% / 3);
+    margin: 0 20px;
+}
+.sns>li>a>img {
+    width: 100%;
+}
+.sns>li>a:hover img {
+    opacity: .8;
+}
+/* Register as a member */
+.join{
+    margin: 20px auto;
+}
+.join>a {
+    color: var(--mainColor);
+    font-size: 18px;
+}
+.join>a:hover {
+    color: var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
+}
+

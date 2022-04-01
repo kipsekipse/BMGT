@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESET Advisor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bmgt.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bmgt.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="innerBox clear">
+
+            <h1 class="logo"><a href="#"><strong>RESET Advisor</strong></a></h1>
+            <p class="hamBtn"><a href="#void"></a></p>
+            <!-- <li><a href="#void"><img src="images/icons/search.svg" alt=""></a></li> -->
+
+            <ul class="member">
+                <li><a href="login.html">SIGN IN</a></li>
+                <li><a href="#void">NEW MEMBER</a></li>
+            </ul>
+            <!-- <ul class="gnb">
+                <li><a href="login.html"><img src="images/icons/people.svg" alt=""></a></li>
+                <li><a href="#void">KOR |</a></li>
+                <li><a href="#void">ENG</a></li>
+                <li><a href="#void">Spain</a></li>
+            </ul> -->
+        </div>
+        <div class="subBg"></div>
+        <div class="wrapper_gnb">
+            <div class="cate_gnb clear">
+
+                <div id="nav" class="innerBox">
+
+                    <div class="category">
+                        <a href="#void" onclick="toggleCateBtn();"><i id="catelcon" class="fas fa-bars"><strong>BMGT is
+                                    a K_Brand</strong></i></a>
+                    </div>
+
+                    <ul class="gnb">
+                        <li>
+                            <a href="#void">Our Insights</a>
+                            <ul class="subMenu">
+                                <li><a href="Preparing.html">2nd Foundation</a></li>
+                                <li><a href="Preparing.html">Resource War</a></li>
+                                <li><a href="Preparing.html">Rare Minerals</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">NEWS</a>
+                            <ul class="subMenu">
+                                <ul class="mSubMenu">
+                                    <li><a href="news_1.html">MBC, Magnesium</a></li>
+                                    <li><a href="news_2.html">Golden Bay Dolomite</a></li>
+                                    <li><a href="news_3.html">Daejeon MBC, Gold</a></li>
+                                    <li><a href="news_4.html">Environmental Fund</a></li>
+                                    <li><a href="news_5.html">Blockchain-Ethereum</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Magnesium</a>
+                            <ul class="subMenu">
+                                <li><a href="Preparing.html">Complex Dvlpmnt</a></li>
+                                <li><a href="Preparing.html">Environmental Fd</a></li>
+                                <li><a href="Preparing.html">Smart Complex</a></li>
+                                <li><a href="Preparing.html">Dolomite Supply</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Slica Stone</a>
+                            <ul class="subMenu">
+                                <li><a href="Preparing.html">Mining Right</a></li>
+                                <li><a href="Preparing.html">Locationn</a></li>
+                                <li><a href="Preparing.html">Mineral Deposits</a></li>
+                                <li><a href="Preparing.html">Explorationn</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Gold</a>
+                            <ul class="subMenu">
+                                <li><a href="Preparing.html">Mining Right</a></li>
+                                <li><a href="Preparing.html">Locationn</a></li>
+                                <li><a href="Preparing.html">Mineral Deposits</a></li>
+                                <li><a href="Preparing.html">Explorationn</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">EBC</a>
+                            <ul class="subMenu">
+                                <li><a href="Preparing.html">Edge Computing</a></li>
+                                <li><a href="Preparing.html">Blockchain</a></li>
+                                <li><a href="Preparing.html">Main Operator</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- mobileMenu -->
+                <div id="mobileMenu">
+                    <div>
+                        <div id="mobileTitle">
+                            <ul class="clearFix">
+                                <li><a href="login.html">SIGN IN</a></li>
+                                <li><a href="#void">NEW MEMBER</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="mobileClose">
+                        <a href="#void"><img src="images/mobile_close.png" alt=""></a>
+                    </div> -->
+                        <ul class="mGnb">
+                            <li>
+                                <a href="#void">Our Insights</a>
+                                <ul class="mSubMenu">
+                                    <li><a href="Preparing.html">2nd Foundation</a></li>
+                                    <li><a href="Preparing.html">Resource War</a></li>
+                                    <li><a href="Preparing.html">Rare Minerals</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">NEWS</a>
+                                <ul class="mSubMenu">
+                                    <li><a href="news_1.html">MBC, Magnesium</a></li>
+                                    <li><a href="news_2.html">Golden Bay Dolomite</a></li>
+                                    <li><a href="news_3.html">Daejeon MBC, Gold</a></li>
+                                    <li><a href="news_4.html">Environmental Fund</a></li>
+                                    <li><a href="news_5.html">Blockchain-Ethereum</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Magnesium</a>
+                                <ul class="mSubMenu">
+                                    <li><a href="Preparing.html">Complex Dvlpmnt</a></li>
+                                    <li><a href="Preparing.html">Environmental Fd</a></li>
+                                    <li><a href="Preparing.html">Smart Complex</a></li>
+                                    <li><a href="Preparing.html">Dolomite Supply</a></li>
+                                </ul>
+                            </li>
+                           
+                            <li>
+                                <a href="#">Slica Stone</a>
+                                <ul class="mSubMenu">
+                                    <li><a href="Preparing.html">Mining Right</a></li>
+                                    <li><a href="Preparing.html">Locationn</a></li>
+                                    <li><a href="Preparing.html">Mineral Deposits</a></li>
+                                    <li><a href="Preparing.html">Explorationn</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Gold</a>
+                                <ul class="mSubMenu">
+                                    <li><a href="Preparing.html">Mining Right</a></li>
+                                    <li><a href="Preparing.html">Locationn</a></li>
+                                    <li><a href="Preparing.html">Mineral Deposits</a></li>
+                                    <li><a href="Preparing.html">Explorationn</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">EBC</a>
+                                <ul class="mSubMenu">
+                                    <li><a href="Preparing.html">Edge Computing</a></li>
+                                    <li><a href="Preparing.html">Blockchain</a></li>
+                                    <li><a href="Preparing.html">Main Operator</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div>
+        </div>
+    </div>
+    <div class="mainBanner">
+        <ul class="banner clear">
+            <li><img src="images/mainBanner_01.jpg" alt=""></li>
+            <li><img src="images/mainBanner_02.jpg" alt=""></li>
+        </ul>
+
+        <!-- <ul class="btn">
+            <li><a href="#">
+                    <img src="images/icons/icon_bannerIL.svg" alt="">
+                </a>
+            </li>
+            <li><a href="#">
+                    <img src="images/icons/icon_bannerIR.svg" alt="">
+                </a>
+            </li>
+        </ul> -->
+
+    </div>
+    <div class="container">
+        <section class="business">
+            <div class="center">
+                <h2>BUSINESS</h2>
+                <P>Let me introduce the RESET Advisors business</P><br>
+                <div class="businessBanner">
+                    <ul class="figure">
+                        <li>
+                            <a href="#">
+                                <img src="images/biz_01.jpg" alt="">
+                                <p><strong>[ Development Mineral Industrial Complex ]</strong></p><br>
+                                <div class="sub_desc">
+                                    <p>National Rare Mineral Resources</p>
+                                    <p>Raw Material Baegunseok</p>
+                                    <p>Processed Magnesium</p>
+                                    <p>Rare Metal</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/biz_02.jpg" alt="">
+                                <p><strong>[ Building an Edge Block Center ]</strong></p><br>
+                                <div class="sub_desc">
+                                    <p>Edge Computing</p>
+                                    <p>Blockchain</p>
+                                    <p>Complex</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/biz_03.jpg" alt="">
+                                <p><strong>[ Meta Mining Consulting ]</strong></p><br>
+                                <div class="sub_desc">
+                                    <p>Korea RESET Advisor</p>
+                                    <p>Australia RESET Advisor</p>
+                                    <p>United_Kingdom RESET Advisor</p>
+                                    <p>Japan RESET Advisor</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="ceo">
+            <h2>CEO</h2>
+            <p>Let me introduce RESET Advisors</p>
+            <div class="greeting">
+                <!-- <iframe width="888" height="500" src="https://www.youtube.com/embed/GrSaRJLqgss"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </video> -->
+
+
+                <iframe width="888" height="500" src="https://www.youtube.com/embed/kqXEsxyANM0"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <!-- 주윤발 전재산 8100억 기부 -->
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/d7QBb1q-QJM" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            </div>
+        </section>
+        <section class="members">
+            <h2>MEMBERS</h2>
+            <p>Let me introduce RESET Advisors member</p>
+            <div class="center">
+                <div class="memb_fig">
+                    <ul>
+                        <li>
+                            <img src="images/memb_01.jpg" alt="">
+                            <span><strong>Mario Herrera</strong></span>
+                            <span>Socio Diretor</span>
+                        </li>
+                        <li>
+                            <img src="images/memb_02.jpg" alt="">
+                            <span><strong>Jorge Flores Mella</strong></span>
+                            <span>Socio Diretor</span>
+                        </li>
+                        <li>
+                            <img src="images/memb_03.jpg" alt="">
+                            <span><strong>Rens Sterk</strong></span>
+                            <span>Managing Director</span>
+                        </li>
+                        <li>
+                            <img src="images/memb_04.jpg" alt="">
+                            <span><strong>Michelle Stokes</strong></span>
+                            <span>Executive Director</span>
+                        </li>
+                        <!-- <li>
+                            <img src="images/memb_05.jpg" alt="">
+                            <span><strong>Craig Wright</strong></span>
+                            <span>Stategy Director</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <h2>NEWS</h2>
+            <ul class="newsList">
+                <li><a href="news_1.html">MBC, 유럽 자동차 공장 다음 달 멈추나?‥'마그네슘 대란'</a></li>
+                <li><a href="news_2.html">골든 베이 백운석</a></li>
+                <li><a href="news_3.html">한반도, 금광이 넘쳐났던 땅 | 대전MBC 다큐멘터리 금의전쟁</a></li>
+            </ul>
+        </section>
+        <section class="sns">
+            <li><a href="#">
+                    <img src="images/icons/instagram.svg" alt="">
+                </a>
+            </li>
+            <li><a href="#">
+                    <img src="images/icons/facebook.svg" alt="">
+                </a>
+            </li>
+            <li><a href="#">
+                    <img src="images/icons/youtube.svg" alt="">
+                </a>
+            </li>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="company innerBox">
+            <!-- <div class="center"> -->
+            <address>
+                <p>10th floor, Kyobo Securities Building, 97, Yeongdeungpo-gu, Seoul, Korea</p>
+                <p>CEO : Alex Wee | Business Registration Number : 331-81-25929</p>
+                <p>TEL : 070-4177-3000 | E_mail : kipsekipse@gmail.com</p>
+            </address>
+            <div class="family">
+                <a href="#">family site</a>
+                <ul>
+                    <li><a href="">Viet_Nam RESET Advisor</a></li>
+                    <li><a href="">Australia RESET Advisor</a></li>
+                    <li><a href="">United_Kingdom RESET Advisor</a></li>
+                    <li><a href="">Japan RESET Advisor</a></li>
+                    <li><a href="">China RESET Advisor</a></li>
+                </ul>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
